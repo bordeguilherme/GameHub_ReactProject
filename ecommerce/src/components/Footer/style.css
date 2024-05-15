@@ -1,0 +1,107 @@
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--cor2);
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.column.side {
+  text-align: center;
+  width: 25%;
+  color: var(--cor1);
+}
+
+.column.side.left {
+  display: flex;
+  justify-content: center;
+}
+
+.column img {
+  width: 300px;
+  margin: auto;
+}
+
+.logo-img {
+  float: left;
+  position: relative;
+
+  width: 586px;
+  height: 409px;
+}
+
+.column.side * {
+  display: block;
+  margin: 2rem;
+  color: var(--cor1);
+}
+
+.column.side button {
+  margin: auto;
+}
+
+.column.middle {
+  text-align: center;
+  width: 50%;
+  color: var(--cor1);
+}
+
+.column.middle a {
+  display: block;
+  color: var(--cor1);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.column.middle a:hover {
+  color: var(--cor4);
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor3);
+  max-width: 100%;
+  margin-left: 0px;
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 8px;
+}
+
+.btn:hover {
+  top: -4px;
+  box-shadow: 0 4px 3px #000000;
+}
+
+.github-btn {
+  background-color: var(--cor3);
+  background-image: url("../../assets/github-100-dark.png");
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  margin: 10px 0px 0px 20px;
+  position: sticky;
+  border: none;
+  top: 0px;
+}
+
+.row::after {
+  clear: both;
+}
+
+@media screen and (max-width: 986px) {
+  .column.side,
+  .column.middle {
+    width: 100%;
+  }
+}

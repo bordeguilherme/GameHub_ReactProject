@@ -1,0 +1,43 @@
+/* ContactForm.css */
+.ContactForm {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ContactForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.ContactForm input,
+.ContactForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ContactForm button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #032242;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ContactForm button:hover {
+  background-color: #112e4e;
+}
+
+/* Adicione margem para o botão de envio */
+.ContactForm button {
+  margin-top: 15px;
+}

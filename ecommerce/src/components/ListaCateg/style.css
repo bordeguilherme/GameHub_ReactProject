@@ -1,0 +1,30 @@
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+#categorias h2{
+    color: var(--cor4);
+    text-transform: capitalize;
+}
+
+.categoria-botao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.ver-mais{
+    color: var(--cor1);
+    border-radius: 4px;
+    padding: 5px 10px;
+    transition: ease .2s;
+}
+
+.ver-mais:hover{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    box-shadow: 0 0 20px var(--cor4);
+}

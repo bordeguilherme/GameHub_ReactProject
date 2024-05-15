@@ -1,0 +1,23 @@
+.categ {
+  position: relative;
+  margin: 40px 0;
+}
+
+.cards-categoria {
+  width: 80vw;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  margin: auto;
+}
+
+@media (max-width: 990px) {
+  .cards-categoria {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-categoria {
+    grid-template-columns: repeat(1, minmax(250px, max-content));
+  }
+}
+

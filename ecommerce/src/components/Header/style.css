@@ -1,0 +1,69 @@
+.header-color {
+  border-bottom: var(--cor3) solid 3px;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
+.header-color * {
+  color: rgb(250, 237, 237);
+}
+
+.header-color * :hover {
+  color: var(--cor4);
+}
+
+.header-color * :active {
+  color: none;
+}
+
+.dropdown-menu {
+  color: rgb(250, 237, 237);
+  backdrop-filter: blur(10px);
+  text-transform: capitalize;
+}
+
+.login-name {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.botao-tema {
+  background-color: var(--cor3);
+  border-radius: 20px;
+  text-transform: uppercase;
+  padding: 2px 10px;
+  width: fit-content;
+}
+
+.icon-cart {
+  font-size: 20px;
+  margin-top: 6px;
+}
+
+@media (max-width: 1000px) {
+  .login-name {
+    position: inherit;
+    justify-content: center;
+  }
+}
+
+.carrinho-btn{
+  background-color: transparent;
+  padding: 0 15px;
+}
+
+.icon-cart:hover{
+  color: var(--cor1);
+}
+
+.carrinho-btn:hover{
+  background-color: var(--cor4);
+  box-shadow: 0 0 20px var(--cor4);
+}

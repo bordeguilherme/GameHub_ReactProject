@@ -1,0 +1,32 @@
+.game-container{
+  color: var(--cor1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 1000px;
+  padding: 40px;
+  margin:  50px auto;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  border: solid 3px var(--cor3);
+  font-size: 20px;
+}
+
+.game-container img {
+  margin: 10px;
+  border-radius: 20px;
+  border: solid 3px var(--cor1);
+}
+
+.game-container button {
+  background-color: rgb(15, 167, 15);
+  transition: 0.5s;
+}
+
+.game-container button:hover {
+  transform: scale(1.03);
+  border: var(--cor4);
+}

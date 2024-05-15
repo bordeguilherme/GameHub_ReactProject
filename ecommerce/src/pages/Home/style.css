@@ -1,0 +1,130 @@
+.background {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+  background-image: url("https://gifs.eco.br/wp-content/uploads/2022/06/gifs-lofi-em-loop-1.gif");
+  background-size: cover;
+  background-position: center1;
+}
+
+.gradiente {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.5018382352941176) 60%,
+    var(--cor2) 100%
+  );
+}
+
+#inicio {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 200px;
+}
+
+#inicio img{
+  position: relative;
+  width: 500px;
+}
+
+h1,
+h2 {
+  position: relative;
+}
+
+.grid-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Duas colunas, uma com o dobro da largura da outra */
+  grid-template-rows: repeat(2, auto);
+  max-width: 900px;
+  margin: auto;
+  height: 400px;
+  grid-gap: 10px;
+}
+
+.conteudo-maior {
+  grid-row: 1 / 3;
+  overflow: hidden;
+  position: relative;
+}
+
+.conteudo-menor {
+  grid-column: 2;
+  overflow: hidden;
+  position: relative;
+}
+
+.container-destaque{
+  display: flex;
+  justify-content: center;
+}
+
+.container-destaque p{
+  position: absolute;
+  bottom: 0;
+  top:0;
+  width: 100%;
+  background: linear-gradient( #00000082,#000 );
+  margin: 0;
+  color: var(--cor1);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  opacity: 0;
+  transition: ease .4s;
+}
+
+.container-destaque p:hover{
+  opacity: 1;
+}
+
+.img-destaque{
+  height: 100%;
+  transition: ease-in .2s;
+}
+
+#destaques{
+    text-align: center;
+    padding: 0 5vw;
+}
+
+#destaques h2{
+  color: var(--cor4);
+}
+
+#categorias{
+    padding: 50px 10vw;
+}
+
+@media (max-width: 768px) {
+  .grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80vw;
+  }
+
+  .conteudo-maior{
+    width: 80vw;
+  }
+
+  .conteudo-menor{
+    width: 38vw;
+    height: 150px;
+  }
+  #inicio img{
+    width: 300px;
+  }
+}
